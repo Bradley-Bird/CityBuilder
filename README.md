@@ -32,7 +32,7 @@ const li = document.createElement('li');
 li.textContent = slogan;
 sloganList.append(li);
 }
-}
+
 
 
 Additional considerations:
