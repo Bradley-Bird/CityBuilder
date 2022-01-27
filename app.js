@@ -69,7 +69,7 @@ function displayStats(results) {
     }
 }
 
-function createCountString(type, count) {
+export function createCountString(type, count) {
     displayMessage = `You have changed ${type.name} ${count} times`;
 }
 
