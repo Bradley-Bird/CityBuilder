@@ -74,7 +74,7 @@ function createCountString(type, count) {
 }
 
 function displaySlogans() {
-  sloganInput.value = '';
+    sloganInput.value = '';
     sloganList.textContent = '';
     for (let slogan of slogans) {
         const li = document.createElement('li');
