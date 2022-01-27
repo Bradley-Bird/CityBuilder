@@ -19,11 +19,36 @@
         </div>
     </header>
     <main>
-        <section class="main-section">
-            <img class="main-logo" src="./assets/alchemy-logo.png" />
-
-
-
+        <section class="selectSection">
+            <div id="city" class="select">
+                <label>Select Your Universe</label>
+                <select name="citySelect" id="citySelector">
+                    <option value="1">Zaun</option>
+                    <option value="2">New York</option>
+                    <option value="3">Stormwind</option>
+                </select>
+            </div>
+            <div id="planets" class="select">
+                <label>Select Your Planet</label>
+                <select name="planetSelect" id="planetSelector">
+                    <option value="1">Runeterra</option>
+                    <option value="2">Midgard</option>
+                    <option value="3">Azeroth</option>
+                </select>
+            </div>
+            <div id="heros" class="select">
+                <label>Select Your Hero</label>
+                <select name="heroSelect" id="heroSelector">
+                    <option value="1">Violet</option>
+                    <option value="2">Doctor Strange</option>
+                    <option value="3">Anduin Wrynn</option>
+                </select>
+            </div>
+        </section>
+        <section class="imageSection">
+            <img id="universeImg" src="" alt="">
+            <img id="planetImg" src="" alt="">
+            <img id="heroImg" src="" alt="">
         </section>
     </main>
     <footer>
