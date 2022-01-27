@@ -16,6 +16,9 @@ const sloganButton = document.getElementById('sloganBtn');
 const sloganInput = document.getElementById('sloganInput');
 const sloganList = document.getElementById('sloganList');
 const resetBtn = document.getElementById('reset');
+const image1 = document.getElementById('cityImg');
+const image2 = document.getElementById('planetImg');
+const image3 = document.getElementById('heroImg');
 
 // let state
 let slogans = [];
@@ -26,21 +29,30 @@ let displayMessage = '';
 // set event listeners
 cityDropdown.addEventListener('change', (e) => {
     const value = e.target.value;
-    cityImage.src = `./assets/${value}-city.jpg`;
+    // cityImage.src = `./assets/${value}-city.jpg`;
+    image1.style.backgroundImage = `url(./assets/${value}-city.jpg)`;
+    image1.style.backgroundSize = 'cover';
+    image1.style.backgroundAttachment = 'fixed';
     cityCounter++;
     createCountString(cityDropdown, cityCounter);
     displayStats('city');
 });
 planetDropdown.addEventListener('change', (e) => {
     const value = e.target.value;
-    planetImage.src = `./assets/${value}-planet.jpg`;
+    // planetImage.src = `./assets/${value}-planet.jpg`;
+    image2.style.backgroundImage = `url(./assets/${value}-planet.jpg)`;
+    // image2.style.backgroundSize = 'cover';
+    image2.style.backgroundAttachment = 'fixed';
     planetCounter++;
     createCountString(planetDropdown, planetCounter);
     displayStats('planet');
 });
 heroDropdown.addEventListener('change', (e) => {
     const value = e.target.value;
-    heroImage.src = `./assets/${value}-hero.png`;
+    // heroImage.src = `./assets/${value}-hero.png`;
+    image3.style.backgroundImage = `url(./assets/${value}-hero.png)`;
+    image3.style.backgroundSize = 'cover';
+    image3.style.backgroundAttachment = 'fixed';
     heroCounter++;
     createCountString(heroDropdown, heroCounter);
     displayStats('hero');

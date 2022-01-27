@@ -12,57 +12,62 @@
     <title>Document</title>
 </head>
 
-<body>
+<body >
     <header>
         <div class="gutter-right logo">
             <img src="./assets/big-logo.png" />
         </div>
     </header>
-    <main>
+    <main class="grid">
         <section class="selectSection">
-            <div id="city" class="select">
+            <div id="city" class="selectCityDiv">
                 <label>Select Your Universe</label>
-                <select name="city" id="citySelector">
+                <select name="city" id="citySelector" class="selectBar">
                     <option value="Zaun">Zaun</option>
                     <option value="New-York">New York</option>
                     <option value="Stormwind">Stormwind</option>
                 </select>
             </div>
-            <div id="planets" class="select">
+            <div id="planets" class="selectPlanetDiv">
                 <label>Select Your Planet</label>
-                <select name="planets" id="planetSelector">
+                <select name="planets" id="planetSelector" class="selectBar">
                     <option value="Runeterra">Runeterra</option>
                     <option value="Midgard">Midgard</option>
                     <option value="Azeroth">Azeroth</option>
                 </select>
             </div>
-            <div id="heros" class="select">
+            <div id="heros" class="selectHeroDiv">
                 <label>Select Your Hero</label>
-                <select name="hero" id="heroSelector">
+                <select name="hero" id="heroSelector" class="selectBar">
                     <option value="Violet">Violet</option>
                     <option value="Doctor-Strange">Doctor Strange</option>
                     <option value="Anduin-Wrynn">Anduin Wrynn</option>
                 </select>
             </div>
         </section>
-        <section id="result">
+        <section id="result" class="resultSection">
             <div id="results-city"></div>
             <div id="results-planet"></div>
             <div id="results-hero"></div>
-            
-        </section>
-        <section class="imageSection">
 
-            <img id="cityImg" src="./assets/Zaun-city.jpg" alt="">
-            <img id="planetImg" src="./assets/Runeterra-planet.jpg" alt="">
-            <img id="heroImg" src="./assets/Violet-hero.png" alt="">
         </section>
-        <section class="sloganSection">
-            <input id="sloganInput" type="text" />
-            <button id="sloganBtn">INPUT</button>
-            <ul id="sloganList"></ul>
-            <button id="reset">RESET</button>
+        <wrapper class="imageSection">
+        <section  class="imageSection1" id="cityImg">
+            <div class="im1"></div>
+            </section>
+            <section class="imageSection2" id="planetImg">  
+            <div class="im2" ></div>
+            </section>
+            <section class="imageSection3" id="heroImg">
+            <div class="im3" ></div>
+            </section>
         </section>
+    </wrapper>
+    <section class="sloganSection">
+    <input id="sloganInput" type="text" />
+    <button id="sloganBtn">INPUT</button>
+    <ul id="sloganList"></ul>
+        <button id="reset">RESET</button>
     </main>
     <footer>
         <div class="copy gutter-right">&copy; 2021 Alchemy Code Lab</div>
