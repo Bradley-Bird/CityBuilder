@@ -22,7 +22,7 @@
         <section class="selectSection">
             <div id="city" class="select">
                 <label>Select Your Universe</label>
-                <select name="citySelect" id="citySelector">
+                <select name="city" id="citySelector">
                     <option value="Zaun">Zaun</option>
                     <option value="New-York">New York</option>
                     <option value="Stormwind">Stormwind</option>
@@ -30,7 +30,7 @@
             </div>
             <div id="planets" class="select">
                 <label>Select Your Planet</label>
-                <select name="planetSelect" id="planetSelector">
+                <select name="planets" id="planetSelector">
                     <option value="Runeterra">Runeterra</option>
                     <option value="Midgard">Midgard</option>
                     <option value="Azeroth">Azeroth</option>
@@ -38,14 +38,19 @@
             </div>
             <div id="heros" class="select">
                 <label>Select Your Hero</label>
-                <select name="heroSelect" id="heroSelector">
+                <select name="hero" id="heroSelector">
                     <option value="Violet">Violet</option>
                     <option value="Doctor-Strange">Doctor Strange</option>
                     <option value="Anduin-Wrynn">Anduin Wrynn</option>
                 </select>
             </div>
         </section>
-        <section id="results"></section>
+        <section id="result">
+            <div id="results-city"></div>
+            <div id="results-planet"></div>
+            <div id="results-hero"></div>
+            
+        </section>
         <section class="imageSection">
 
             <img id="cityImg" src="./assets/Zaun-city.jpg" alt="">

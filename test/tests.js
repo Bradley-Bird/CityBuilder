@@ -1,15 +1,16 @@
-import { createCountString } from "../utils.js";
+import { createCountString } from '../utils.js';
+
 
 const test = QUnit.test;
 
 test('should return a string describing the current state', (expect) => {
     //Arrange
     // Set up your arguments and expectations
-    const expected = `You have changed hero 4 times, planets 5 times, and heros 1 times`
+    const expected = `You have changed city 4 times`;
 
     //Act
     // Call the function you're testing and set the result to a const
-    const actual = createCountString(4, 5, 1);
+    const actual = createCountString(city, 4);
 
     //Expect
     // Make assertions about what is expected versus the actual result
