@@ -1,5 +1,5 @@
 // import functions and grab DOM elements
-// import { createCountString, displaySlogans } from './utils.js';
+import { createCountString } from './utils.js';
 const cityDropdown = document.getElementById('citySelector');
 const cityImage = document.getElementById('cityImg');
 
@@ -34,7 +34,7 @@ cityDropdown.addEventListener('change', (e) => {
     image1.style.backgroundSize = 'cover';
     image1.style.backgroundAttachment = 'fixed';
     cityCounter++;
-    createCountString(cityDropdown, cityCounter);
+    displayMessage = createCountString(cityDropdown.name, cityCounter);
     displayStats('city');
 });
 planetDropdown.addEventListener('change', (e) => {
@@ -44,7 +44,7 @@ planetDropdown.addEventListener('change', (e) => {
     // image2.style.backgroundSize = 'cover';
     image2.style.backgroundAttachment = 'fixed';
     planetCounter++;
-    createCountString(planetDropdown, planetCounter);
+    displayMessage =createCountString(planetDropdown.name, planetCounter);
     displayStats('planet');
 });
 heroDropdown.addEventListener('change', (e) => {
@@ -54,7 +54,7 @@ heroDropdown.addEventListener('change', (e) => {
     image3.style.backgroundSize = 'cover';
     image3.style.backgroundAttachment = 'fixed';
     heroCounter++;
-    createCountString(heroDropdown, heroCounter);
+    displayMessage = createCountString(heroDropdown.name, heroCounter);
     displayStats('hero');
 });
 sloganButton.addEventListener('click', () => {
@@ -81,9 +81,7 @@ function displayStats(results) {
     }
 }
 
-export function createCountString(type, count) {
-    displayMessage = `You have changed ${type.name} ${count} times`;
-}
+
 
 function displaySlogans() {
     sloganInput.value = '';
