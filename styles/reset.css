@@ -21,16 +21,54 @@ img {
 	align-items: center;
 	max-width: 100%;
 	max-height: auto;
+
+}
+
+.selectSection, .resultsSection, section {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 1.5rem;
+	padding-block: 1rem;
+	width: min(95%, 70rem);
+	margin-inline: auto;
+}
+
+
+
+#results-city {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	grid-column-start: 1;
+	
+
+}
+
+
+#results-planet {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	grid-column-start: 2;
+	
+
+}
+
+#results-hero {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	grid-column-start: 3;
+	
+
 }
 
 .imageSection {
 	display: grid;
-	gap: 1.5rem;
 	grid-template-columns: repeat(6, 1fr);
-
-
-	/* padding-block: 1rem;
-	width: min(95%, 70rem); */
+	gap: 1.5rem;
+	padding-block: 1rem;
+	width: min(95%, 70rem);
 	margin-inline: auto;
 }
 
