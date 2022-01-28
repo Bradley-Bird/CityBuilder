@@ -29,30 +29,37 @@ let displayMessage = '';
 // set event listeners
 cityDropdown.addEventListener('change', (e) => {
     const value = e.target.value;
-    // cityImage.src = `./assets/${value}-city.jpg`;
-    image1.style.backgroundImage = `url(./assets/${value}-city.jpg)`;
-    image1.style.backgroundSize = 'cover';
-    image1.style.backgroundAttachment = 'fixed';
+    cityImage.src = `./assets/${value}-city.jpg`;
+    // image1.style.backgroundImage = `url(./assets/${value}-city.jpg)`;
+    // image1.style.backgroundSize = 'cover';
+    // image1.style.backgroundRepeat = 'no-repeat';
+    // image1.style.backgroundAttachment = 'fixed';
+    // image1.style.backgroundPosition = 'center';
+
     cityCounter++;
     displayMessage = createCountString(cityDropdown.name, cityCounter);
     displayStats('city');
 });
 planetDropdown.addEventListener('change', (e) => {
     const value = e.target.value;
-    // planetImage.src = `./assets/${value}-planet.jpg`;
-    image2.style.backgroundImage = `url(./assets/${value}-planet.jpg)`;
+    planetImage.src = `./assets/${value}-planet.jpg`;
+    // image2.style.backgroundImage = `url(./assets/${value}-planet.jpg)`;
     // image2.style.backgroundSize = 'cover';
-    image2.style.backgroundAttachment = 'fixed';
+    // image2.style.backgroundRepeat = 'no-repeat';
+    // image2.style.backgroundAttachment = 'fill';
+    // image1.style.backgroundPosition = 'right center';
     planetCounter++;
-    displayMessage =createCountString(planetDropdown.name, planetCounter);
+    displayMessage = createCountString(planetDropdown.name, planetCounter);
     displayStats('planet');
 });
 heroDropdown.addEventListener('change', (e) => {
     const value = e.target.value;
-    // heroImage.src = `./assets/${value}-hero.png`;
-    image3.style.backgroundImage = `url(./assets/${value}-hero.png)`;
-    image3.style.backgroundSize = 'cover';
-    image3.style.backgroundAttachment = 'fixed';
+    heroImage.src = `./assets/${value}-hero.png`;
+    // image3.style.backgroundImage = `url(./assets/${value}-hero.png)`;
+    // image2.style.backgroundSize = 'cover';
+    // image2.style.backgroundRepeat = 'no-repeat';
+    // image2.style.backgroundAttachment = 'fill';
+    // image1.style.backgroundPosition = 'right center';
     heroCounter++;
     displayMessage = createCountString(heroDropdown.name, heroCounter);
     displayStats('hero');
@@ -80,8 +87,6 @@ function displayStats(results) {
         resultsHero.textContent = displayMessage;
     }
 }
-
-
 
 function displaySlogans() {
     sloganInput.value = '';

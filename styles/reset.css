@@ -2,14 +2,12 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-
-* {
+add home page styles here * {
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
 }
 
-/* add home page styles here */
 body {
 	background: #333;
 	color: #fff;
@@ -19,12 +17,16 @@ img {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	max-width: 100%;
-	max-height: auto;
-
+	overflow: hidden;
 }
 
-.selectSection, .resultsSection, section {
+.mainImg img {
+	flex-shrink: 0;
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.selectSection, .resultsSection, section, img {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	gap: 1.5rem;
@@ -40,9 +42,11 @@ img {
 	justify-content: center;
 	align-items: center;
 	grid-column-start: 1;
-	
+
 
 }
+
+
 
 
 #results-planet {
@@ -50,7 +54,7 @@ img {
 	justify-content: center;
 	align-items: center;
 	grid-column-start: 2;
-	
+
 
 }
 
@@ -59,16 +63,17 @@ img {
 	justify-content: center;
 	align-items: center;
 	grid-column-start: 3;
-	
+
 
 }
 
 .imageSection {
 	display: grid;
-	grid-template-columns: repeat(6, 1fr);
+	grid-template-rows: repeat(1, 1fr);
+	grid-template-columns: repeat(3, 1fr);
 	gap: 1.5rem;
 	padding-block: 1rem;
-	width: min(95%, 70rem);
+
 	margin-inline: auto;
 }
 
@@ -77,27 +82,24 @@ img {
 	justify-content: center;
 	align-items: center;
 	grid-column-start: 1;
-	grid-column-end: 3;
-	height: 1000px;
-}
 
+}
 
 .imageSection2 {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	grid-column-start: 3;
-	grid-column-end: 5;
-	height: 1000px;
+	grid-column-start: 2;
+
 }
 
 .imageSection3 {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	grid-column-start: 5;
-	grid-column-end: 7;
-	height: 1000px;
+	grid-column-start: 3;
+	padding-block: 1rem;
+
 }
 
 
