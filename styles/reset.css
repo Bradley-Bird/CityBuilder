@@ -1,14 +1,111 @@
-
 /* adapted from http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
-
-*{
-    box-sizing: border-box;
+add home page styles here * {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
 }
 
-html, body {
+body {
+	background: #333;
+	color: #fff;
+}
+
+img {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+}
+
+.mainImg img {
+	flex-shrink: 0;
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.selectSection, .resultsSection, section, img {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 1.5rem;
+	padding-block: 1rem;
+	width: min(95%, 70rem);
+	margin-inline: auto;
+}
+
+
+
+#results-city {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	grid-column-start: 1;
+
+
+}
+
+
+
+
+#results-planet {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	grid-column-start: 2;
+
+
+}
+
+#results-hero {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	grid-column-start: 3;
+
+
+}
+
+.imageSection {
+	display: grid;
+	grid-template-rows: repeat(1, 1fr);
+	grid-template-columns: repeat(3, 1fr);
+	gap: 1.5rem;
+	padding-block: 1rem;
+
+	margin-inline: auto;
+}
+
+.imageSection1 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	grid-column-start: 1;
+
+}
+
+.imageSection2 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	grid-column-start: 2;
+
+}
+
+.imageSection3 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	grid-column-start: 3;
+	padding-block: 1rem;
+
+}
+
+
+
+
+/* html, body {
     height: 100%;
     width: 100%;
 }
@@ -35,4 +132,4 @@ time, mark, audio, video {
 
 ol, ul {
 	list-style: none;
-}
+} */
