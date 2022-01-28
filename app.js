@@ -32,8 +32,10 @@ cityDropdown.addEventListener('change', (e) => {
     // cityImage.src = `./assets/${value}-city.jpg`;
     image1.style.backgroundImage = `url(./assets/${value}-city.jpg)`;
     image1.style.backgroundSize = 'contain';
+    // image1.style.backgroundSize = '100% 100%';
     image1.style.backgroundRepeat = 'no-repeat';
     image1.style.backgroundAttachment = 'fixed';
+    image1.style.backgroundPosition = 'left center';
     cityCounter++;
     displayMessage = createCountString(cityDropdown.name, cityCounter);
     displayStats('city');
@@ -44,8 +46,10 @@ planetDropdown.addEventListener('change', (e) => {
     // console.log('this is working')
     image2.style.backgroundImage = `url(./assets/${value}-planet.jpg)`;
     image2.style.backgroundSize = 'contain';
+    // image2.style.backgroundSize = '100% 100%';
     image2.style.backgroundRepeat = 'no-repeat';
     image2.style.backgroundAttachment = 'fixed';
+    image2.style.backgroundPosition = 'center';
     planetCounter++;
     displayMessage = createCountString(planetDropdown.name, planetCounter);
     displayStats('planet');
@@ -54,10 +58,12 @@ heroDropdown.addEventListener('change', (e) => {
     const value = e.target.value;
     // heroImage.src = `./assets/${value}-hero.png`;
     image3.style.backgroundImage = `url(./assets/${value}-hero.jpg)`;
-    image3.style.backgroundSize = 'cover';
+    // image3.style.backgroundSize = 'cover';
+    // image3.style.backgroundSize = '100% 100%,';
     image3.style.backgroundSize = 'contain';
     image3.style.backgroundRepeat = 'no-repeat';
     image3.style.backgroundAttachment = 'fixed';
+    image3.style.backgroundPosition = 'right center';
     heroCounter++;
     displayMessage = createCountString(heroDropdown.name, heroCounter);
     displayStats('hero');

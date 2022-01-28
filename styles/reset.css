@@ -24,25 +24,35 @@ body {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	grid-template-rows: repeat(1, 1fr);
-	/* padding-block: 2rem; */
-	/* width: min(95%,70rem); */
+	/* width: min(95%, 70rem); */
 	height: 100vh;
-	background-size: contain;
+	width: 100vw;
 }
 
-#city {
+.selectBar {
+	position: ;
+	display: inline-block absolute;
+	/* flex-direction: column;
+	float: inline-end; */
 	background: url();
 }
 
-#planets {
+.label {
+	position: relative;
+}
+
+#planets, #city, #heros {
+	display: flex;
+	background-origin: border-box;
+	/* object-fit: cover; */
+	width: auto;
+	height: 100vh;
 	background: url();
 }
 
-#heros {
-	background: url();
-}
 
-background-image:
+
+
 
 
 
@@ -50,8 +60,15 @@ background-image:
 
 
 header {
-	height: 2rem;
+	display: grid;
+	grid-template-columns: repeat(3,1fr);
+	grid-template-rows: repeat(1, 1fr);
+	height: 5rem;
 	background-color: black;
+	justify-content: center;
+	align-items: center;
+	contain: content;
+
 }
 
 
