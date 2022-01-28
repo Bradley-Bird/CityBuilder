@@ -16,9 +16,9 @@ const sloganButton = document.getElementById('sloganBtn');
 const sloganInput = document.getElementById('sloganInput');
 const sloganList = document.getElementById('sloganList');
 const resetBtn = document.getElementById('reset');
-const image1 = document.getElementById('cityImg');
-const image2 = document.getElementById('planetImg');
-const image3 = document.getElementById('heroImg');
+// const image1 = document.getElementById('cityImg');
+// const image2 = document.getElementById('planetImg');
+// const image3 = document.getElementById('heroImg');
 
 // let state
 let slogans = [];
