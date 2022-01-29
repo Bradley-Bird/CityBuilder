@@ -10,8 +10,18 @@
 
 body {
 	background: #333;
+	/* z-index: -1; */
 	color: #fff;
 }
+
+
+/* .paddingDiv{
+	display: flex;
+	flex-direction: column; */
+	/* padding-right: 20%; */
+	/* align-items:flex-end; */
+	/* justify-content:center; */
+
 
 /* img {
 	display: flex;
@@ -25,13 +35,14 @@ body {
 	grid-template-columns: repeat(3, 1fr);
 	grid-template-rows: repeat(1, 1fr);
 	/* width: min(95%, 70rem); */
-	height: 100vh;
-	width: 100vw;
+	/* height: 100vh; */
 }
 
 .selectBar {
-	position: ;
-	display: inline-block absolute;
+	text-align: center;
+	color: white;
+	/* width: 33vw;
+	height: 20px; */
 	/* flex-direction: column;
 	float: inline-end; */
 	background: url();
@@ -45,11 +56,16 @@ body {
 	display: flex;
 	background-origin: border-box;
 	/* object-fit: cover; */
-	width: auto;
 	height: 100vh;
-	background: url();
+	
+	/* z-index: 1000; */
 }
-
+/* #heros{
+	margin-right: 1000px;
+}
+#planets{
+	margin-left: 1000px;
+} */
 
 
 
@@ -60,19 +76,51 @@ body {
 
 
 header {
+	
 	display: grid;
-	grid-template-columns: repeat(3,1fr);
-	grid-template-rows: repeat(1, 1fr);
-	height: 5rem;
-	background-color: black;
-	justify-content: center;
-	align-items: center;
-	contain: content;
-
+	/* grid-template-columns: 3 ,1fr 1fr 1fr;
+	grid-template-rows: 2, 1fr 1fr; */
+	/* height: 2rem; */
+	background-color: rgb(114, 102, 102);
+	color: whitesmoke;
+	/* justify-content: center;
+	align-items: center; */
+	grid-template-areas:
+		'city planet hero'
+		'cityLabel planetLabel heroLabel'
+	;
 }
 
+.citySelector {
+	grid-area: city;
+}
 
+.planetSelector {
+	grid-area: planet;
+}
 
+.heroSelector {
+	grid-area: hero;
+}
+
+.cityLabel {
+	grid-area: cityLabel;
+	text-align: center;
+}
+
+.planetLabel {
+	grid-area: planetLabel;
+	text-align: center;
+}
+
+.heroLabel {
+	grid-area: heroLabel;
+	text-align: center;
+}
+
+#results-city, #results-planet, #results-hero {
+	text-align: center;
+}
 
 /* html, body {
     height: 100%;

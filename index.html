@@ -12,53 +12,39 @@
     <title>Document</title>
 </head>
 
-<body>
-    <header>
-        <div class="gutter-right logo">
-            
-        </div>
-        <label>Select Your City Aesthetic</label>
-        <label class="label">Select Your Cities Outskirts</label>
-        <label>Select Your Tourist Attraction</label>
-        <select name="city" id="citySelector" class="selectBar">
-            <option value="bright">Bright</option>
-            <option value="oldtown">Oldtown</option>
-            <option value="water">Water Front</option>
-        </select>
-        <select name="planets" id="planetSelector" class="selectBar">
-            <option value="pnw">PNW Vibes</option>
-            <option value="newzealand">New Zealand Cliffs</option>
-            <option value="desert">Worm Territory</option>
-        </select>
-        <select name="hero" id="heroSelector" class="selectBar">
-            <option value="underground">Old Town Underground</option>
-            <option value="skyscraper">Architecture</option>
-            <option value="nightsky">Low light Pollution</option>
-        </select>
-    </header>
-    <main class="grid">
-
-        <div id="city" class="selectCityDiv">
+<body >
+        <header>
+            <label class="cityLabel">Select Your City Aesthetic</label>
+            <label class="planetLabel">Select Your Cities Outskirts</label>
+            <label class="heroLabel">Select Your Tourist Attraction</label>
+            <select name="city" id="citySelector" class="selectBar">
+                <option value="bright">Bright</option>
+                <option value="oldtown">Oldtown</option>
+                <option value="water">Water Front</option>
+            </select>
+            <select name="planets" id="planetSelector" class="selectBar">
+                <option value="pnw">PNW Vibes</option>
+                <option value="newzealand">New Zealand Cliffs</option>
+                <option value="desert">Worm Territory</option>
+            </select>
+            <select name="hero" id="heroSelector" class="selectBar">
+                <option value="underground">Old Town Underground</option>
+                <option value="skyscraper">Architecture</option>
+                <option value="nightsky">Low light Pollution</option>
+            </select>
+        </header>
+        <main class="grid">
             <div id="results-city"></div>
-            <!-- <div class="mainImg"><img src="#" alt="" id="cityImg"></div> -->
-        </div>
-
-        <div id="planets" class="selectPlanetDiv">
             <div id="results-planet"></div>
-            <!-- <div class="mainImg"><img src="#" alt="" id="planetImg"></div> -->
-        </div>
-
-        <div id="heros" class="selectHeroDiv">
             <div id="results-hero"></div>
-            <!-- <div class="mainImg"><img src="#" alt="" id="heroImg"></div> -->
-        </div>
-
-
-    </main>
-    <input id="sloganInput" type="text" />
-    <button id="sloganBtn">INPUT</button>
-    <ul id="sloganList"></ul>
-    <button id="reset">RESET</button>
+            <div id="city"></div>
+            <div id="planets"></div>
+            <div id="heros"></div>
+        </main>
+        <input id="sloganInput" type="text" />
+        <button id="sloganBtn">INPUT</button>
+        <ul id="sloganList"></ul>
+        <button id="reset">RESET</button>
     <footer>
         <div class="copy gutter-right">&copy; 2021 Alchemy Code Lab</div>
     </footer>
