@@ -18,9 +18,9 @@ body {
 /* .paddingDiv{
 	display: flex;
 	flex-direction: column; */
-	/* padding-right: 20%; */
-	/* align-items:flex-end; */
-	/* justify-content:center; */
+/* padding-right: 20%; */
+/* align-items:flex-end; */
+/* justify-content:center; */
 
 
 /* img {
@@ -30,13 +30,6 @@ body {
 	overflow: hidden;
 } */
 
-.grid {
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	grid-template-rows: repeat(1, 1fr);
-	/* width: min(95%, 70rem); */
-	/* height: 100vh; */
-}
 
 .selectBar {
 	text-align: center;
@@ -57,26 +50,62 @@ body {
 	background-origin: border-box;
 	/* object-fit: cover; */
 	height: 100vh;
-	
+
 	/* z-index: 1000; */
 }
-/* #heros{
-	margin-right: 1000px;
+
+
+
+
+
+
+
+
+.grid {
+	display: grid;
+	width: 100vw;
+	/* grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(1, 1fr); */
+	/* width: min(95%, 70rem); */
+	/* height: 100vh; */
+	grid-template-areas:
+		'cityr planetr herosr'
+		'city planet heros'
+		'city planet heros'
+		'city planet heros'
+		'city planet heros'
+		'city planet heros'
+		'city planet heros'
+		;
 }
-#planets{
-	margin-left: 1000px;
-} */
 
+#results-city {
+	grid-area: cityr;
+}
 
+#results-planet {
+	grid-area: planetr;
+}
 
+#results-hero {
+	grid-area: herosr;
+}
 
+#city {
+	grid-area: city;
+}
 
+#planets {
+	grid-area: planet;
+}
 
-
+#heros {
+	grid-area: heros;
+}
 
 
 header {
-	
+
 	display: grid;
 	/* grid-template-columns: 3 ,1fr 1fr 1fr;
 	grid-template-rows: 2, 1fr 1fr; */
